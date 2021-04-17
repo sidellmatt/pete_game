@@ -14,7 +14,7 @@ class Board
       obstacles << [idx1, idx2] if !obstacles.include?([idx1, idx2])
     end
     obstacles.each do |idxs|
-      @grid[idxs[0]][idxs[1]] = [FireObstacle].sample.new()
+      @grid[idxs[0]][idxs[1]] = [FireObstacle].sample.new([idxs[0], idxs[1]])
     end
   end
 

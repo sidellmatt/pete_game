@@ -1,6 +1,7 @@
 class Obstacle
 
-  def initialize
+  def initialize(position)
+    @position = position
   end
   
 end

@@ -1,4 +1,5 @@
 require_relative "player.rb"
+require_relative "board.rb"
 
 class Game
 
@@ -11,7 +12,7 @@ class Game
         end
         p "Type a number from 1-100. "
         response = gets.chomp
-        @board = Board.new(@players.length * 10, response)
+        @board = Board.new(@players.length * 2, response)
     end
 
 
