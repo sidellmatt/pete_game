@@ -9,11 +9,14 @@ class Game
         *players.each do |player|
             @players << Player.new(player)
         end
+        p "Type a number from 1-100. "
+        response = gets.chomp
+        @board = Board.new(@players.length * 10, response)
     end
 
 
     def play_turn(player)
-        
+
     end
 
 

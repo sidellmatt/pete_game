@@ -16,11 +16,6 @@ class Board
     obstacles.each do |idxs|
       @grid[idxs[0]][idxs[1]] = [FireObstacle].sample.new()
     end
-    p @grid
   end
 
 end
-
-Board.new(5, 20)
-Board.new(5, 50)
-Board.new(5, 100)
